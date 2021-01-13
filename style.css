@@ -1,0 +1,100 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+#main {
+  height: 316px;
+  width: 316px;
+  background-color: black;
+  position: relative;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+}
+#sub {
+  height: 102px;
+  width: 102px;
+  background-color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  position: relative;
+  float: left;
+  margin: auto;
+  top: 2px;
+  left: 2px;
+}
+
+.cell {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  margin: 2px;
+  position: relative;
+  float: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.input {
+  border: none;
+  border-color: transparent;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+.input:focus {
+  background-color: yellow;
+  border-color: transparent;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#buttons {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+#edit {
+  width: 60px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border-color: black;
+}
+#submit {
+  width: 60px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border-color: black;
+}
+#edit:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-radius: 4px;
+}
+#submit:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-radius: 4px;
+}
+input[type="number"][disabled] {
+  color: black;
+}

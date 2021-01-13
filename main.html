@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h2 class="title">Sudoku Solver</h2>
+    <div id="main">
+      <div id="sub">
+        <div class="cell"><input type="number" id="c00" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c01" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c02" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c10" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c11" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c12" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c20" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c21" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c22" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c03" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c04" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c05" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c13" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c14" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c15" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c23" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c24" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c25" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c06" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c07" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c08" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c16" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c17" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c18" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c26" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c27" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c28" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c30" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c31" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c32" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c40" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c41" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c42" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c50" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c51" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c52" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c33" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c34" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c35" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c43" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c44" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c45" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c53" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c54" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c55" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c36" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c37" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c38" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c46" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c47" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c48" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c56" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c57" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c58" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c60" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c61" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c62" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c70" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c71" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c72" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c80" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c81" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c82" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c63" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c64" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c65" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c73" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c74" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c75" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c83" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c84" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c85" class="input" min="0" max="9" /></div>
+      </div>
+      <div id="sub">
+        <div class="cell"><input type="number" id="c66" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c67" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c68" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c76" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c77" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c78" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c86" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c87" class="input" min="0" max="9" /></div>
+        <div class="cell"><input type="number" id="c88" class="input" min="0" max="9" /></div>
+      </div>
+    </div>
+    <div id="buttons">
+      <button id="edit" onclick="location.reload()">Clear</button>
+      <button id="submit" onclick="loadData()">Solve</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
